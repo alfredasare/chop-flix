@@ -43,7 +43,8 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
                 displayName,
                 email,
                 createdAt,
-                profileImg: photoURL
+                profileImg: photoURL,
+                ...additionalData
             });
         } catch (e) {
             console.log(`Error creating user: ${e.message}`)
