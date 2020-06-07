@@ -48,7 +48,7 @@ export const OverheadImage = styled.div`
   left: -350px;
   z-index: 1;
   & *{
-  height: 700px;
+  height: 710px;
   transform: rotate(15deg);
   }
   @media only screen and (min-width: 768px){
@@ -70,7 +70,7 @@ export const NewStash = styled.h2`
   font-size: ${typeScale.header2};
   margin: 0;
   color: ${props => props.theme.textColorInverted};
-  text-transform: uppercase;
+  text-transform: capitalize;
   &:after{
   content: '';
   margin: 0 30px;

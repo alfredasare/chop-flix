@@ -23,6 +23,7 @@ export const TextWrapper = styled.div`
 `;
 export const SongTitle = styled.p`
   text-transform: uppercase;
+  text-align: left;
   margin: 0;
   font-size: 0.9rem;
   font-weight: 800;
@@ -36,6 +37,7 @@ export const LikeSection =styled.div`
   width: 25px;
   height: 25px;
   fill: none;
+  cursor: pointer;
   }
   & svg > path:last-of-type{
   fill: black;
@@ -46,6 +48,7 @@ export const LikeSection =styled.div`
 `;
 export const Genre = styled.p`
   text-transform: uppercase;
+  text-align: left;
   font-size: 0.8rem;
   margin: 5px 0 40px 0;
   color: ${neutral[400]};
