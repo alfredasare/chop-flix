@@ -14,8 +14,8 @@ import {primaryFont} from "./typography";
 
 
 export const lightTheme = {
-    secondaryWrapper: raisinBlack,
-    primaryWrapper: cultured,
+    secondaryWrapperColor: raisinBlack,
+    primaryWrapperColor: cultured,
     iconColor: neutral[600],
     primaryColor: radicalRed,
     primaryColorHover: brinkPink,
@@ -45,15 +45,15 @@ export const lightTheme = {
 };
 
 export const defaultTheme = {
-    primaryWrapper: raisinBlack,
-    secondaryWrapper: cultured,
+    primaryWrapperColor: raisinBlack,
+    secondaryWrapperColor: cultured,
     iconColor: neutral[100],
     primaryColor: cadetBlue,
     primaryColorHover: maxBlueGreen,
     primaryColorActive: darkCyan,
     textColorOnPrimary: neutral[100],
     textColor: neutral[100],
-    textColorInverted: neutral[600],
+    textColorInverted: raisinBlack,
     subTextColor: neutral[300],
     primaryColorDisabled: neutral[400],
     textColorOnDisabled: neutral[100],

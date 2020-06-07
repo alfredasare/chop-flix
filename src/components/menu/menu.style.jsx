@@ -16,6 +16,9 @@ export const Icon = styled.i`
   color: ${props => props.theme.iconColor};
   font-size: 1.5rem;
   margin-bottom: ${props => (props.message ? "0" : "40px")};
+  & * {
+  width: 2rem;
+  }
 `;
 export const VerticalLine = styled.div`
   height: calc(100% - 433px);

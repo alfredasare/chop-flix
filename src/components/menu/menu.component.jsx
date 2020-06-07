@@ -1,21 +1,25 @@
 import React from "react";
 import {Icon, MenuWrapper, SocialIconWrapper, VerticalLine} from "./menu.style";
+import HomeIcon from "../../assets/icons/home.png";
+import Audio from "../../assets/icons/waves.png";
+import Cart from "../../assets/icons/store.png";
+import Contact from "../../assets/icons/contact.png";
 
 
 const Menu = () => {
     return (
         <MenuWrapper>
             <Icon>
-                <i className="fas fa-home"/>
+                <img src={HomeIcon} alt="home icon"/>
             </Icon>
             <Icon>
-                <i className="fas fa-home"/>
+                <img src={Audio} alt="audio icon"/>
             </Icon>
             <Icon>
-                <i className="fas fa-home"/>
+                <img src={Cart} alt="home icon"/>
             </Icon>
             <Icon message>
-                <i className="fas fa-home"/>
+                <img src={Contact} alt="home icon"/>
             </Icon>
             <VerticalLine/>
             <SocialIconWrapper>
