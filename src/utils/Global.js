@@ -14,5 +14,6 @@ export const GlobalStyle = createGlobalStyle`
   font-family: ${primaryFont};
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   }
 `;

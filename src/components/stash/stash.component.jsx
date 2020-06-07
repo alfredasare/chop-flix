@@ -12,7 +12,7 @@ import {
 import Banana from "../../assets/images/banana.png";
 import CardList from "../cardList/cardList.component";
 
-const Stash = () => {
+const StashSection = () => {
     return (
         <StashWrapper>
             <OverheadImage>
@@ -41,4 +41,4 @@ const Stash = () => {
     )
 };
 
-export default Stash;
+export default StashSection;

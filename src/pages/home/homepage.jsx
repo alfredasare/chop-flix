@@ -1,13 +1,13 @@
 import React from "react";
-import Stash from "../../components/stash/stash.component";
 import Cover from "../../components/cover/cover.component";
+import StashSection from "../../components/stash/stash.component";
 
 
 const Homepage = () => {
     return (
         <>
             <Cover/>
-            <Stash/>
+            <StashSection/>
         </>
     )
 };

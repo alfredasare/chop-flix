@@ -6,14 +6,14 @@ export const StashWrapper = styled.section`
   background-color: ${props => props.theme.secondaryWrapperColor};
    width: 100%;
    height: 630px;
-   padding: 40px;
+   padding: 40px 10px;
    position: relative;
    
 `;
 export const StashContentWrapper = styled.div`
   position: absolute;
   z-index: 2;
-  width: calc(100%);
+  width: 100%;
 `;
 export const StashHeader = styled.div`
   font-size: ${typeScale.header4};
@@ -35,15 +35,24 @@ export const StashHeaderWord = styled.h5`
   height: 0.4rem;
   background-color: ${props => props.theme.textColorInverted};
   }
+  @media only screen and (max-width: 1025px){
+   letter-spacing: 0.2rem;
+   margin: ${props => props.dashed ? "0 2rem 0 0" : "0"};
+
+  }
 `;
 export const OverheadImage = styled.div`
+  display: none;
   position: absolute;
   top: -50px;
   left: -350px;
   z-index: 1;
   & *{
-  width: 65%;
+  height: 700px;
   transform: rotate(15deg);
+  }
+  @media only screen and (min-width: 768px){
+   display: inline-block;
   } 
 `;
 export const NewStashContainer = styled.div`
@@ -52,6 +61,10 @@ export const NewStashContainer = styled.div`
   margin-bottom: 20px;
   justify-content: center;
   align-items: flex-end;
+  @media only screen and (max-width: 1025px){
+  flex-direction: column;
+  align-items: center;
+  }
 `;
 export const NewStash = styled.h2`
   font-size: ${typeScale.header2};
@@ -66,9 +79,19 @@ export const NewStash = styled.h2`
   width: 0.1rem;
   background-color: ${neutral[400]};  
   }
+  @media only screen and (max-width: 1025px){
+  font-size: ${typeScale.header3};
+   &:after{
+  content: none;
+  }
+  }
+
 `;
 export const DiscoverNewStash = styled.p`
   font-size: ${typeScale.paragraph};
   text-transform: uppercase;
   color: ${neutral[400]};
+  @media only screen and (max-width: 1025px){
+  font-size: ${typeScale.helperText};
+  }
 `;

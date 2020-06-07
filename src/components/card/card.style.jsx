@@ -3,7 +3,7 @@ import {neutral} from "../../utils";
 
 export const CardWrapper = styled.div`
   height: auto;
-  width: 200px;
+  min-width: 200px;
   padding: 5px;
   border-radius: 5px;
   background-color: ${neutral[200]};
