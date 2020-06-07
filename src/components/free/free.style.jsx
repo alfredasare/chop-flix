@@ -11,10 +11,10 @@ export const FreeWrapper = styled.section`
   }
 `;
 export const FreeMachine = styled.img`
-  height: 700px;
+  height: 140%;
   position: absolute;
   z-index: 1;
-  top: -120px;
+  top: -140px;
   left: 45%;
   display: none;
   @media only screen and (min-width:1200px){
