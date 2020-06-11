@@ -1,9 +1,9 @@
 import React from "react";
 import {CardImage, CardWrapper, Genre, LikeSection, SongTitle, TextWrapper} from "./card.style";
 
-const Card = ({image, price, genre, songTitle}) => {
+const Card = ({image, price, genre, songTitle, delay}) => {
     return (
-        <CardWrapper>
+        <CardWrapper data-aos="slide-left" data-aos-delay={delay}>
             <CardImage img={image}/>
             <TextWrapper>
                 <SongTitle>

@@ -7,7 +7,7 @@ const CardList = () => {
     return <CardListWrapper id="cardList">{
         NewRelease.map((music, index) =>
         <Card key={music.index} image={music.image} songTitle={music.songTitle} genre={music.genre}
-              price={music.price}/>)}
+              price={music.price} delay={index * 1000}/>)}
     </CardListWrapper>
 
 };

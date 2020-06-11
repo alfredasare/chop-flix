@@ -22,7 +22,7 @@ const Menu = () => {
             <Icon message>
                 <img src={Contact} alt="home icon"/>
             </Icon>
-            <VerticalLine/>
+            <VerticalLine id="vertical"/>
             <SocialIconWrapper className="social">
                 <i className="fab fa-instagram"/>
             </SocialIconWrapper>

@@ -10,9 +10,9 @@ export const MenuIconWrapper = styled.div`
   position: fixed;
   z-index: 3000;
   top: calc(100vh - 55px);
-  left: 20px;
-  width: 50px;
-  height: 50px;
+  left: 10px;
+  width: 47px;
+  height: 47px;
   border-radius: 50%;
   border: 2px solid ${brinkPink};
   cursor: pointer;
@@ -20,9 +20,6 @@ export const MenuIconWrapper = styled.div`
   transition: all 0.5s ease-in-out;
   &:hover{
   opacity: 1;
-  }
-  @media only screen and (min-width: 600px){
-    left: 20px;
   }
 `;
 export const IconCircles = styled.div`

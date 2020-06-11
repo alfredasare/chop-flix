@@ -26,10 +26,10 @@ export const SampleButton = styled.div`
   position: absolute;
   z-index: 2;
   top: 55px;
-  left: calc(50% - 74.914px);
+  left: calc(50% - 59px);
   display: inline-block;
   padding: 10px 25px;
-  font-size: 120%;
+  font-size: 80%;
   text-align: center;
   background: none;
   border: 1.5px solid white;
@@ -39,6 +39,10 @@ export const SampleButton = styled.div`
   box-shadow:  0 0 6px #fff;
   font-weight: 800;
   cursor: pointer;
+  @media only screen and (min-width: 600px){
+  left: calc(50% - 74.914px);
+  font-size: 120%;
+  }
 `;
 export const CoverTextWrapper = styled.div`
   position: absolute;

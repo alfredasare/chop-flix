@@ -21,7 +21,7 @@ export const ArrowForward = styled.div`
   justify-content: center;
   align-items: center;
   & > *{
-  width: 75%;
+  width: 50%;
   }
 `;
 export const ArrowReverse = styled(ArrowForward)`

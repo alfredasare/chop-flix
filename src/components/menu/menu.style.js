@@ -3,10 +3,9 @@ import {brinkPink, typeScale} from "../../utils";
 
 
 export const MenuWrapper = styled.div`
-  padding: 10px;
+  padding: 10px 20px;
   position: absolute;
   bottom: 20px;
-  left: 20px;
   z-index: 2000;
   display: inline-flex;
   width: auto;
@@ -15,9 +14,6 @@ export const MenuWrapper = styled.div`
   align-items: center;
   height: calc(100% - 40px);
   transition: all 0.5s ease-out;
-  @media only screen and (min-width: 600px){
-  left: 20px;
-  }
 `;
 export const Icon = styled.i`
   color: ${props => props.theme.iconColor};
