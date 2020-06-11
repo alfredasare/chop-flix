@@ -108,4 +108,7 @@ export const StashArrows = styled.div`
   margin-right: 10px;
   }
   }
+  & > * > * {
+  width: 50%;
+  }
 `;
