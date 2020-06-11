@@ -16,7 +16,7 @@ export const MenuWrapper = styled.div`
   height: calc(100% - 40px);
   transition: all 0.5s ease-out;
   @media only screen and (min-width: 600px){
-  left: 40px;
+  left: 20px;
   }
 `;
 export const Icon = styled.i`

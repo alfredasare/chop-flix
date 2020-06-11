@@ -9,7 +9,7 @@ export const CardWrapper = styled.div`
   background-color: ${neutral[200]};
   transition: all 0.5s ease-in-out;
   &:hover{
-  box-shadow: 0 17px 14px 2px rgba(159,159,159,1);
+  box-shadow: 0 10px 14px 2px rgba(179,179,179,1);
   transform: translateY(-5px);
   }
 `;

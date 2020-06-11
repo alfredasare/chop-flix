@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
   overflow-x: hidden;
   }
   .menu-disappear{
-  //background: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0) 100%);
   position: absolute;
   height: 0;
   transform: translateY(100vh);
@@ -38,7 +37,9 @@ export const GlobalStyle = createGlobalStyle`
   .rotate-icon{
   transform: rotate(-90deg);
   }
-  
+  .add-gradient{
+    background: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0) 100%);
+  }
   .menu-icon-show{
   display: inline-flex !important;
   }

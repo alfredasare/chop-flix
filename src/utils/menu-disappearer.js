@@ -16,10 +16,11 @@ window.onscroll = () => {
         menuIcon.classList.add('menu-icon-show');
         menuIcon.classList.remove('rotate-icon');
         menuElement.classList.add('remove-label');
+        menuElement.classList.add('add-gradient');
     }else {
         social.forEach(icon => icon.style.opacity = 1);
         menuElement.classList.remove('menu-disappear');
-        menuElement.style.background = "none";
+        menuElement.classList.remove('add-gradient');
         menuIcon.classList.remove('menu-icon-show');
         menuElement.style.transform = "translateY(0)";
         menuElement.classList.remove('remove-label');

@@ -9,8 +9,8 @@ export const MenuIconWrapper = styled.div`
   align-items: center;
   position: fixed;
   z-index: 3000;
-  top: calc(100vh - 60px);
-  left: 40px;
+  top: calc(100vh - 55px);
+  left: 20px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -22,7 +22,7 @@ export const MenuIconWrapper = styled.div`
   opacity: 1;
   }
   @media only screen and (min-width: 600px){
-    left: 40px;
+    left: 20px;
   }
 `;
 export const IconCircles = styled.div`
