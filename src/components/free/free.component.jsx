@@ -1,16 +1,31 @@
 import React from "react";
-import {FreeMachine, FreeSubText, FreeWrapper, HeaderOne, HeaderTwo, TextWrapper} from "./free.style";
+import {
+    DownloadIconFree,
+    FlexHeader,
+    FreeMachine,
+    FreeSubText,
+    FreeWrapper,
+    HeaderOne,
+    HeaderTwo,
+    TextWrapper
+} from "./free.style";
 import Machine from "../../assets/images/free.png";
 import {PrimaryButton} from "../button/button.style";
+import {DownloadIcon} from "../icons/icons.components";
 
 const FreeSection = () => {
     return (
         <FreeWrapper>
             <FreeMachine src={Machine} alt="free download"/>
             <TextWrapper>
-                <HeaderOne>
-                    Free
-                </HeaderOne>
+                <FlexHeader>
+                    <DownloadIconFree>
+                        <DownloadIcon/>
+                    </DownloadIconFree>
+                    <HeaderOne>
+                        Free
+                    </HeaderOne>
+                </FlexHeader>
                 <HeaderTwo>
                     downloads
                 </HeaderTwo>

@@ -58,8 +58,9 @@ export const Icon = styled.i`
   position: absolute;
   top: 15%;
   font-style: normal;
-  margin-left: 10px;
-  color: ${brinkPink};
+  margin-left: 20px;
+  background-color: rgba(0,0,0,0.78);
+  padding: 2px 5px;
   animation: move-right 0.4s ease-in both;
   }
   }

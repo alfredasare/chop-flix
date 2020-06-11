@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {neutral, radicalRed} from "../../utils";
+import {brinkPink, neutral, radicalRed} from "../../utils";
 
 export const CardWrapper = styled.div`
   height: 340px;
@@ -48,7 +48,7 @@ export const LikeSection = styled.div`
   fill: ${radicalRed};
   }
   & svg:hover > path:first-of-type{
-  fill: url(#MyGradient);
+  fill: ${brinkPink};
   }
 `;
 export const Genre = styled.p`

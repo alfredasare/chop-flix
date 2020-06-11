@@ -29,14 +29,26 @@ export const TextWrapper = styled.div`
   width: 50%;
   }
 `;
+export const FlexHeader = styled.div`
+  display: flex;
+`;
 export const HeaderOne = styled.h1`
  font-size: ${typeScale.header1};
  margin: 0;
- &:before{
- font-family: "Font Awesome 5 free", serif;
- content: '\f019';
- color: black;
- }
+`;
+export const DownloadIconFree = styled.div`
+  width: ${typeScale.header1};
+  & * *:first-child{
+  animation: bounce 1s ease-in-out infinite both alternate ;
+  }
+  @keyframes bounce {
+  0%{
+  transform: translateY(0);
+  }
+  100%{
+  transform: translateY(-100px);
+  }
+  }
 `;
 export const HeaderTwo = styled.h3`
  font-size: ${typeScale.header3};

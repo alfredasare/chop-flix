@@ -16,7 +16,6 @@ window.onscroll = () => {
         menuElement.classList.add('menu-disappear');
         menuIcon.classList.add('menu-icon-show');
         menuIcon.classList.remove('rotate-icon');
-        menuElement.classList.add('remove-label');
         menuElement.classList.add('add-gradient');
         menuElement.style.justifyContent = "space-around";
         vertical.style.width = "100%";
@@ -28,7 +27,6 @@ window.onscroll = () => {
         menuElement.classList.remove('add-gradient');
         menuIcon.classList.remove('menu-icon-show');
         menuElement.style.transform = "translateY(0)";
-        menuElement.classList.remove('remove-label');
         vertical.style.height = "calc(100% - 433px)";
         vertical.style.width = "2px";
     }

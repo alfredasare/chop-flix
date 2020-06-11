@@ -24,6 +24,7 @@ export const CoverWrapper = styled.div`
 `;
 export const SampleButton = styled.div`
   position: absolute;
+  color: ${props => props.theme.textColor};
   z-index: 2;
   top: 55px;
   left: calc(50% - 59px);
@@ -73,6 +74,7 @@ export const MainCoverText = styled.h1`
 `;
 export const WhoWeBeWrapper = styled.div`
   padding: 0 20%;
+  color: ${props => props.theme.textColor};
   @media only screen and (min-width: 1024px){
     padding:0 40px 0 0;
   }
