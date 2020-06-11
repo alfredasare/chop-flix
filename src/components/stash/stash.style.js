@@ -5,8 +5,8 @@ import {neutral, typeScale} from "../../utils";
 export const StashWrapper = styled.section`
   background-color: ${props => props.theme.secondaryWrapperColor};
    width: 100%;
-   height: 630px;
-   padding: 40px 10px;
+   height: 680px;
+   padding: 40px 0;
    position: relative;
    
 `;
@@ -14,10 +14,12 @@ export const StashContentWrapper = styled.div`
   position: absolute;
   z-index: 2;
   width: 100%;
+  overflow: hidden;
 `;
 export const StashHeader = styled.div`
   font-size: ${typeScale.header4};
   display: flex;
+  width: 100%;
   justify-content: center;
   color: ${props => props.theme.textColorInverted};
 `;
@@ -93,5 +95,17 @@ export const DiscoverNewStash = styled.p`
   color: ${neutral[400]};
   @media only screen and (max-width: 1025px){
   font-size: ${typeScale.helperText};
+  }
+`;
+export const StashArrows = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  & > *{
+  width: 30px;
+  height: 30px;
+  &:first-child{
+  margin-right: 10px;
+  }
   }
 `;

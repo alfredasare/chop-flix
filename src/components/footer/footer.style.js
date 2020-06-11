@@ -41,6 +41,7 @@ export const CopyWright = styled.p`
 `;
 export const Form = styled.form`
     width: 100%;
+    z-index: 2;
     & button{
     margin-top: 20px;
     width: 100%;

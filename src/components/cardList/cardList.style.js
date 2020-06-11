@@ -3,8 +3,21 @@ import styled from "styled-components";
 export const CardListWrapper = styled.div`
   display: flex;
   align-items: center;
-  overflow-x: auto;
+  overflow: auto;
+  transition: all 0.4s ease-in-out;
+  scroll-behavior: smooth;
+ 
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+  & {
+  -ms-overflow-style: none;
+}
   text-align: center;
+  padding: 10px;
    & *{
    margin-right: 10px;
    }

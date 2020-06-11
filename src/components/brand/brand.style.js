@@ -3,6 +3,7 @@ import {typeScale} from "../../utils";
 
 export const BrandWrapper = styled.div`
   position: absolute;
+  top: 20px;
   right: 20px;
   z-index: 2;
   display: inline-flex;

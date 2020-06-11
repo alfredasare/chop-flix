@@ -1,12 +1,17 @@
 import styled from "styled-components";
-import {neutral} from "../../utils";
+import {neutral, radicalRed} from "../../utils";
 
 export const CardWrapper = styled.div`
-  height: auto;
+  height: 340px;
   min-width: 200px;
   padding: 5px;
   border-radius: 5px;
   background-color: ${neutral[200]};
+  transition: all 0.5s ease-in-out;
+  &:hover{
+  box-shadow: 0 17px 14px 2px rgba(159,159,159,1);
+  transform: translateY(-5px);
+  }
 `;
 export const CardImage = styled.div`
   height: 200px;
@@ -29,7 +34,7 @@ export const SongTitle = styled.p`
   font-weight: 800;
   color: ${props => props.theme.textColorInverted};
 `;
-export const LikeSection =styled.div`
+export const LikeSection = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +45,7 @@ export const LikeSection =styled.div`
   cursor: pointer;
   }
   & svg > path:last-of-type{
-  fill: black;
+  fill: ${radicalRed};
   }
   & svg:hover > path:first-of-type{
   fill: url(#MyGradient);

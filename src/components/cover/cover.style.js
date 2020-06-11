@@ -1,34 +1,31 @@
 import styled from "styled-components";
-import CoverImage from "../../assets/images/cover2.jpg";
-import {radicalRed, typeScale} from "../../utils";
+import {neutral, radicalRed, typeScale} from "../../utils";
 
 
 export const CoverWrapper = styled.div`
   position: relative;
   height: 100vh;
   width: 100vw;
-  padding: 20px;
-  background-color: ${props => props.theme.primaryWrapperColor};
-  background-image: url(${CoverImage});
+  overflow: hidden;
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   &::before{
   content: '';
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(0,0,0,0.53);
   }
-  @media only screen and (min-width: 600px){
-  padding: 20px 40px;
-  }
 `;
 export const SampleButton = styled.div`
   position: absolute;
   z-index: 2;
+  top: 55px;
   left: calc(50% - 74.914px);
   display: inline-block;
   padding: 10px 25px;
@@ -41,6 +38,7 @@ export const SampleButton = styled.div`
   text-shadow: 0 0 6px #fff;
   box-shadow:  0 0 6px #fff;
   font-weight: 800;
+  cursor: pointer;
 `;
 export const CoverTextWrapper = styled.div`
   position: absolute;
@@ -54,7 +52,6 @@ export const CoverTextWrapper = styled.div`
   flex-direction: row;
   align-items: flex-end;
   left: calc(50% - 249px);
-
   }
 `;
 export const MainCoverText = styled.h1`
@@ -83,4 +80,37 @@ export const WhoWeBeTitle = styled.h5`
 export const WhoWeBeSubText = styled.p`
   font-size: ${typeScale.paragraph};
   color: ${props => props.theme.subTextColor};
+`;
+export const Arrows = styled.div`
+  display: none;
+  width: 70%;
+  margin: 0 15%;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+  top: calc(50% - 100px);
+  @media only screen and (min-width: 600px){
+    display: flex;
+  }
+`;
+
+export const CarouselTrackerWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  z-index: 1000;
+  top: 20px;
+  & *:last-child{
+  margin: 0;
+  }
+`;
+export const CarouselTracker = styled.div`
+  width: 15px;
+  height: 15px;
+  border: 2px solid ${neutral[100]};
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
 `;
